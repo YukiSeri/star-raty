@@ -5,13 +5,14 @@ class ReviewsController < ApplicationController
 
   def create
     Review.create(create_params)
-    render :index
+    redirect_to action: :index
   end
 
   def show
   end
 
   def index
+    @reviews = Review.all
   end
 end
 
