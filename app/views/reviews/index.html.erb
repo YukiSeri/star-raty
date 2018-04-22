@@ -1,4 +1,7 @@
 <h1>Reviews</h1>
+<div>
+  <%= link_to '新規REVIEW作成', "/reviews/new", method: :get %>
+</div>
 <div class="review_index">
   <% @reviews.each do |review| %>
     <ul>
