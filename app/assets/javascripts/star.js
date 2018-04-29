@@ -1,4 +1,5 @@
 $(document).on('turbolinks:load', function() {
+
   $('#star').raty({
     size     : 36,
     starOff: '/assets/star-off.png',
@@ -11,7 +12,8 @@ $(document).on('turbolinks:load', function() {
     starOff: '/assets/star-off.png',
     starOn: '/assets/star-on.png',
     number: 5,
-    score: 3,
+    score: $(this).data('score'),
     readOnly: true
   });
+
 });

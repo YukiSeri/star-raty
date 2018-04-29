@@ -6,7 +6,7 @@
   <% @reviews.each do |review| %>
     <ul>
       <li><%= review.title %></li>
-      <li><div class="star_dispaly"><%= review.star %></div></li>
+      <li class="star_dispaly" data-score="<%= review.star %>"></li>
       <li><%= review.memo %></li>
     </ul>
   <% end %>
